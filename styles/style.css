@@ -1,0 +1,126 @@
+/* ------------------------------  */
+/*         General Styles          */
+/* ------------------------------  */
+
+*{
+  box-sizing: border-box;
+}
+
+
+/* ------------------------------  */
+/*      Styles for Nav Bars        */
+/* ------------------------------  */
+
+header{
+	border: none;
+	width:100%;
+	text-align: left;
+	margin: 0 auto;
+	height: auto;
+	display: block;
+}
+
+.videoContainer{
+	background:  #dedede;
+	width: 100%;
+	height: 50vh
+;
+	display: block;
+}
+
+#navBar{
+	display: inline-block;
+}
+
+.logo{
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin-left: 15px;
+}
+
+input{
+	height: 40px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+ul{
+	display: inline-block;
+}
+
+.tab{
+	display: inline-block;
+	vertical-align: baseline;
+	background: transparent;
+	margin-right: 12px;
+	cursor: pointer;
+	font-family: Helvetica;
+	font-size:  1em;
+}
+
+
+/* ------------------------------  */
+/*      Cross Section Styles       */
+/* ------------------------------  */
+
+html,
+body {
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.page-container {
+  margin: 20px;
+}
+
+
+/* horizontal panel*/
+
+.panel-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid silver;
+  overflow: hidden;
+  
+  /* avoid browser level touch actions */
+  xtouch-action: none;
+}
+
+.panel-left {
+  flex: 0 0 auto;
+  /* only manually resize */
+  padding: 10px;
+  width: 300px;
+  min-height: 200px;
+  min-width: 150px;
+  white-space: nowrap;
+  background: #838383;
+  color: white;
+}
+
+.splitter {
+  flex: 0 0 auto;
+  width: 18px;  
+  background: center center no-repeat #535353;
+  min-height: 200px;
+  cursor: col-resize;  
+}
+
+.panel-right {
+  flex: 1 1 auto;
+  /* resizable */
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  min-width: 200px;
+  background: #eee;
+}
+
+
